@@ -1,0 +1,135 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+*{
+    font-family: "Comic Neue", cursive;
+}
+.comic-neue-light-italic {
+    font-family: "Comic Neue", cursive;
+    font-weight: 300;
+    font-style: bold;
+  }
+
+body {
+    font-family: "Comic Neue", cursive;
+    font-weight: 300;
+    font-style: bold;
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+.dum {
+  font-family: "Cinzel", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+section {
+    padding: 60px 0;
+}
+
+h1, h2 {
+    margin-bottom: 20px;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+/* Navbar Styles */
+.navbar-brand img.nav-logo {
+    height: 40px;
+}
+
+.navbar-nav .nav-link {
+    font-size: 1.1em;
+    margin-right: 20px;
+}
+
+.navbar-nav {
+    align-items: center;
+}
+
+@media (min-width: 992px) {
+    .navbar-brand {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .navbar-nav.ml-auto {
+        margin-left: auto;
+    }
+
+    .navbar-nav.mr-auto {
+        margin-right: auto;
+    }
+}
+
+/* Home Section */
+#home {
+    background: url('your-image.jpg') no-repeat center center/cover;
+    color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#home h1 {
+    font-size: 3em;
+}
+
+#home p {
+    font-size: 1.2em;
+}
+
+/* About Section */
+#about {
+    background: #f4f4f4;
+}
+
+/* Services Section */
+#services {
+    background: #fff;
+}
+
+/* Contact Section */
+#contact {
+    background: #f4f4f4;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.btn {
+    margin-top: 10px;
+}
+
+/* Footer Styles */
+footer {
+    background: #333;
+    color: white;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navbar-nav {
+        text-align: center;
+    }
+
+    #home {
+        height: auto;
+        padding: 100px 0;
+    }
+}
