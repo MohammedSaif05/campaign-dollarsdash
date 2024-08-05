@@ -1,58 +1,22 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
-
 *{
-    font-family: "Comic Neue", cursive;
+    max-width: 100vw;
+    overflow-x: hidden;
 }
-.comic-neue-light-italic {
-    font-family: "Comic Neue", cursive;
-    font-weight: 300;
-    font-style: bold;
-  }
+
+
+
+
 
 body {
     font-family: "Comic Neue", cursive;
     font-weight: 300;
     font-style: bold;
-    max-width: 100%;
-    overflow-x: hidden
+    max-width: 100vw;
+    overflow-x: hidden;
 }
-.comic-neue-light {
-    font-family: "Comic Neue", cursive;
-    font-weight: 300;
-    font-style: normal;
-  }
-  
-  .comic-neue-regular {
-    font-family: "Comic Neue", cursive;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  .comic-neue-bold {
-    font-family: "Comic Neue", cursive;
-    font-weight: 700;
-    font-style: normal;
-  }
-  
-  .comic-neue-light-italic {
-    font-family: "Comic Neue", cursive;
-    font-weight: 300;
-    font-style: italic;
-  }
-  
-  .comic-neue-regular-italic {
-    font-family: "Comic Neue", cursive;
-    font-weight: 400;
-    font-style: italic;
-  }
-  
-  .comic-neue-bold-italic {
-    font-family: "Comic Neue", cursive;
-    font-weight: 700;
-    font-style: italic;
-  }
-  
+@media screen {
+    
+}
 header {
     margin-bottom: 20px;
 }
@@ -71,7 +35,7 @@ header {
 .dum {
   font-family: "Cinzel", serif;
   font-optical-sizing: auto;
-  font-weight: <weight>;
+  font-weight: weigh;
   font-style: normal;
 }
 section {
@@ -86,9 +50,7 @@ p {
     margin-bottom: 20px;
 }
 
-@media (max-width : 880px){
-    scr
-}
+@media (max)
 
 //* Navbar Styles */
 /* Navbar Styles */
