@@ -11,8 +11,9 @@ body {
     font-family: "Comic Neue", cursive;
     font-weight: 300;
     font-style: bold;
- 
+    overflow-y: scroll; 
     overflow-x: hidden;
+    scrollbar-width: none;
 }
 @media screen {
     
@@ -85,6 +86,27 @@ p {
       position: absolute;
       right: 0;
     }
+  }
+
+  .navbar-toggler {
+    border: none;
+    background: transparent;
+    outline: none;
+    padding: 0;
+  }
+/* Hide the default toggle icon */
+.navbar-toggler-icon {
+    display: block;
+    width: 30px; /* Adjust size as needed */
+    height: 30px; /* Adjust size as needed */
+    background-image: url('/img/menu.png'); /* Path to your hamburger icon */
+    background-size: cover;
+    transition: background-image 0.3s ease;
+  }
+  
+  /* Toggle to cross icon */
+  .navbar-toggler.toggled .navbar-toggler-icon {
+    background-image: url('/img/close.png'); /* Path to your cross icon */
   }
 
   /* Smooth toggle animation */
