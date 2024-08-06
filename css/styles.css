@@ -51,7 +51,13 @@ p {
     margin-bottom: 20px;
 }
 
-@media (max)
+.bg1 {
+  background-image: url('/img/Hero-bg.png'); /* Replace with the path to your image */
+  background-size: cover; /* Ensures the image covers the whole section */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+}
+
 
 //* Navbar Styles */
 /* Navbar Styles */
@@ -99,7 +105,7 @@ p {
     display: block;
     width: 30px; /* Adjust size as needed */
     height: 30px; /* Adjust size as needed */
-    background-image: url('/img/menu.png'); /* Path to your hamburger icon */
+    background-image: url('/img/cross.svg'); /* Path to your hamburger icon */
     background-size: cover;
     transition: background-image 0.3s ease;
   }
