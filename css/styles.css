@@ -244,3 +244,48 @@ footer p {
         padding: 100px 0;
     }
 }
+
+
+.portfolio-section {
+  padding: 60px 0;
+  text-align: center;
+}
+.portfolio-title {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  font-weight: bold;
+}
+.portfolio-item {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  position: relative; /* For positioning icons and button */
+}
+.portfolio-item:hover {
+  transform: scale(1.05);
+}
+.portfolio-img {
+  width: 100%;
+  height: auto;
+}
+.portfolio-content {
+  padding: 20px;
+}
+.social-icons {
+  margin: 50px 0;
+  padding: 5px;
+  gap: 15px;
+}
+.social-icons i {
+  font-size: 2rem;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+  padding: 5px;
+}
+.social-icons i:hover {
+  color: #007bff; /* Change color on hover */
+}
+.cta-button {
+  margin-top: 20px;
+}
