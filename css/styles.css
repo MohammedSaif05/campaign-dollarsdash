@@ -1,61 +1,61 @@
 *{
    
-    overflow-x: hidden;
+  overflow-x: hidden;
 }
 .navbar {
-  width: 100vw;
+width: 100vw;
 }
 
 body {
-    font-family: "Comic Neue", cursive;
-    font-weight: 300;
-    font-style: bold;
-    overflow-y: scroll; 
-    overflow-x: hidden;
-    scrollbar-width: none;
-    position: relative;
-    overflow-x: hidden;
+  font-family: "Comic Neue", cursive;
+  font-weight: 300;
+  font-style: bold;
+  overflow-y: scroll; 
+  overflow-x: hidden;
+  scrollbar-width: none;
+  position: relative;
+  overflow-x: hidden;
 }
 header {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 .h1, .h2, .h3, .h4, .h5, .h6 {
-  margin-bottom: 0.5rem;
-  font-family: "Cinzel", serif;
-  
-  line-height: 1.2;
-  
-  background: linear-gradient(#00b3ff, #260587);
-  -webkit-background-clip: text;
-          background-clip: text;
-  -webkit-text-fill-color: transparent;
+margin-bottom: 0.5rem;
+font-family: "Cinzel", serif;
+
+line-height: 1.2;
+
+background: linear-gradient(#00b3ff, #260587);
+-webkit-background-clip: text;
+        background-clip: text;
+-webkit-text-fill-color: transparent;
 }
 
 .dum {
-  font-family: "Cinzel", serif;
-  font-optical-sizing: auto;
-  font-weight: weigh;
-  font-style: normal;
-  width: 100vw;
-  margin-left: calc(-50vw + 50%);
+font-family: "Cinzel", serif;
+font-optical-sizing: auto;
+font-weight: weigh;
+font-style: normal;
+width: 100vw;
+margin-left: calc(-50vw + 50%);
 }
 section {
-    padding: 60px 0;
+  padding: 60px 0;
 }
 
 h1, h2 {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 p {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .bg1 {
-  background-image: url('/img/Hero-bg.png'); /* Replace with the path to your image */
-  background-size: cover; /* Ensures the image covers the whole section */
-  background-position: center; /* Centers the image */
-  background-repeat: no-repeat; /* Prevents the image from repeating */
+background-image: url('/img/Hero-bg.png'); /* Replace with the path to your image */
+background-size: cover; /* Ensures the image covers the whole section */
+background-position: center; /* Centers the image */
+background-repeat: no-repeat; /* Prevents the image from repeating */
 }
 
 
@@ -64,225 +64,225 @@ p {
 /* Navbar Styles */
 /* Ensure the navbar brand image is centered only on large and extra-large devices */
 @media (min-width: 992px) {
-    .navbar-brand {
-      position: absolute;
-      left: 50%;
-      transform: translateX(-50%);
-    }
-  
-    .navbar-toggler {
-      display: none;
-    }
-  
-    .navbar-nav.ml-auto {
-      margin-left: auto;
-    }
-  
-    .navbar-nav.mr-auto {
-      margin-right: auto;
-    }
-  }
-  
-  @media (max-width: 991px) {
-    .navbar-brand {
-      display: none;
-    }
-  
-    .navbar-toggler {
-      position: absolute;
-      right: 0;
-    }
+  .navbar-brand {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
   .navbar-toggler {
-    border: none;
-    background: transparent;
-    outline: none;
-    padding: 0;
-  }
-/* Hide the default toggle icon */
-.navbar-toggler-icon {
-    display: block;
-    width: 30px; /* Adjust size as needed */
-    height: 30px; /* Adjust size as needed */
-    background-image: url('/img/cross.svg'); /* Path to your hamburger icon */
-    background-size: cover;
-    transition: background-image 0.3s ease;
-  }
-  
-  /* Toggle to cross icon */
-  .navbar-toggler.toggled .navbar-toggler-icon {
-    background-image: url('/img/close.png'); /* Path to your cross icon */
+    display: none;
   }
 
-  /* Smooth toggle animation */
-.navbar-collapse {
-    transition: max-height 0.35s ease;
-    overflow: hidden;
+  .navbar-nav.ml-auto {
+    margin-left: auto;
   }
-  
-  .navbar-collapse.collapsing {
-    max-height: 0;
+
+  .navbar-nav.mr-auto {
+    margin-right: auto;
   }
-  
-  .navbar-collapse.show {
-    max-height: 500px; /* Adjust this value as needed */
+}
+
+@media (max-width: 991px) {
+  .navbar-brand {
+    display: none;
   }
-  
-  /* Center nav-items */
-  .navbar-nav {
-    display: flex;
-    justify-content: center; /* Center items horizontally */
-    flex-grow: 1; /* Allow the nav items to grow and fill the space */
-  }
-  
-  .nav-link {
-    position: relative;
-    display: inline-block;
-    padding-bottom: 10px; /* Increased padding for better effect visibility */
-    color: #333; /* Text color */
-    font-weight: bold; /* Optional: makes the text stand out */
-    transition: color 0.3s ease; /* Smooth transition for text color */
-  }
-  
-  /* Underline effect */
-  .nav-link::after {
-    content: '';
+
+  .navbar-toggler {
     position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: 3px; /* Thickness of the underline */
-    background-color: #007bff !important; /* Underline color */
-    transform: scaleX(0) !important ;
-    transform-origin: bottom right !important;
-    transition: transform 0.3s ease, background-color 0.3s ease !important;
+    right: 0;
   }
-  
-  /* Hover effect */
-  .nav-link:hover::after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
-  }
-  
-  /* Optional: Change text color on hover */
-  .nav-link:hover {
-    color: #007bff; /* Text color when hovered */
-  }
-  /* AOS Animation */
-  [data-aos] {
-    opacity: 0;
-    transition: opacity 0.6s ease;
-  }
-  
-  [data-aos].aos-animate {
-    opacity: 1;
-  }  
+}
+
+.navbar-toggler {
+  border: none;
+  background: transparent;
+  outline: none;
+  padding: 0;
+}
+/* Hide the default toggle icon */
+.navbar-toggler-icon {
+  display: block;
+  width: 30px; /* Adjust size as needed */
+  height: 30px; /* Adjust size as needed */
+  background-image: url('/img/cross.svg'); /* Path to your hamburger icon */
+  background-size: cover;
+  transition: background-image 0.3s ease;
+}
+
+/* Toggle to cross icon */
+.navbar-toggler.toggled .navbar-toggler-icon {
+  background-image: url('/img/close.png'); /* Path to your cross icon */
+}
+
+/* Smooth toggle animation */
+.navbar-collapse {
+  transition: max-height 0.35s ease;
+  overflow: hidden;
+}
+
+.navbar-collapse.collapsing {
+  max-height: 0;
+}
+
+.navbar-collapse.show {
+  max-height: 500px; /* Adjust this value as needed */
+}
+
+/* Center nav-items */
+.navbar-nav {
+  display: flex;
+  justify-content: center; /* Center items horizontally */
+  flex-grow: 1; /* Allow the nav items to grow and fill the space */
+}
+
+.nav-link {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 10px; /* Increased padding for better effect visibility */
+  color: #333; /* Text color */
+  font-weight: bold; /* Optional: makes the text stand out */
+  transition: color 0.3s ease; /* Smooth transition for text color */
+}
+
+/* Underline effect */
+.nav-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 3px; /* Thickness of the underline */
+  background-color: #007bff !important; /* Underline color */
+  transform: scaleX(0) !important ;
+  transform-origin: bottom right !important;
+  transition: transform 0.3s ease, background-color 0.3s ease !important;
+}
+
+/* Hover effect */
+.nav-link:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+/* Optional: Change text color on hover */
+.nav-link:hover {
+  color: #007bff; /* Text color when hovered */
+}
+/* AOS Animation */
+[data-aos] {
+  opacity: 0;
+  transition: opacity 0.6s ease;
+}
+
+[data-aos].aos-animate {
+  opacity: 1;
+}  
 
 /* Home Section */
 #home {
-    background: url('your-image.jpg') no-repeat center center/cover;
-    color: white;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+  background: url('your-image.jpg') no-repeat center center/cover;
+  color: white;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 #home h1 {
-    font-size: 3em;
+  font-size: 3em;
 }
 
 #home p {
-    font-size: 1.2em;
+  font-size: 1.2em;
 }
 
 /* About Section */
-            
+          
 /* Services Section */
 #services {
-    background: #fff;
+  background: #fff;
 }
 
 /* Contact Section */
 #contact {
-    background: #f4f4f4;
+  background: #f4f4f4;
 }
 
 .form-group {
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 
 .btn {
-    margin-top: 10px;
+  margin-top: 10px;
 }
 
 /* Footer Styles */
 footer {
-    background: #333;
-    color: white;
-    padding: 20px 0;
+  background: #333;
+  color: white;
+  padding: 20px 0;
 }
 
 footer p {
-    margin: 0;
+  margin: 0;
 }
 
 /* Responsive Styles */
 @media (max-width: 768px) {
-    .navbar-nav {
-        text-align: center;
-    }
+  .navbar-nav {
+      text-align: center;
+  }
 
-    #home {
-        height: auto;
-        padding: 100px 0;
-    }
+  #home {
+      height: auto;
+      padding: 100px 0;
+  }
 }
 
 
 .portfolio-section {
-  padding: 60px 0;
-  text-align: center;
+padding: 60px 0;
+text-align: center;
 }
 .portfolio-title {
-  font-size: 2.5rem;
-  margin-bottom: 40px;
-  font-weight: bold;
+font-size: 2.5rem;
+margin-bottom: 40px;
+font-weight: bold;
 }
 .portfolio-item {
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  overflow: hidden;
-  transition: transform 0.3s ease;
-  position: relative; /* For positioning icons and button */
+border: 1px solid #ddd;
+border-radius: 5px;
+overflow: hidden;
+transition: transform 0.3s ease;
+position: relative; /* For positioning icons and button */
 }
 .portfolio-item:hover {
-  transform: scale(1.05);
+transform: scale(1.05);
 }
 .portfolio-img {
-  width: 100%;
-  height: auto;
+width: 100%;
+height: auto;
 }
 .portfolio-content {
-  padding: 20px;
+padding: 20px;
 }
 .social-icons {
-  margin: 50px 0;
-  padding: 5px;
-  gap: 15px;
+margin: 50px 0;
+padding: 5px;
+gap: 15px;
 }
 .social-icons i {
-  font-size: 2rem;
-  margin: 0 10px;
-  transition: color 0.3s ease;
-  padding: 5px;
+font-size: 2rem;
+margin: 0 10px;
+transition: color 0.3s ease;
+padding: 5px;
 }
 .social-icons i:hover {
-  color: #007bff; /* Change color on hover */
+color: #007bff; /* Change color on hover */
 }
 .cta-button {
-  margin-top: 20px;
+margin-top: 20px;
 }
