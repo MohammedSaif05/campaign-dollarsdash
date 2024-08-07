@@ -32,7 +32,7 @@
         <!---pricing tag CSS has been added here--->
         <style type="text/css">
             body{
-       
+       font-family: cinzel;
         overflow-x: hidden;
     }
     .pricing-plan {
@@ -48,7 +48,12 @@
         padding: 0;
         margin-bottom: 1rem;
         text-align: center;
-        background: #144F66;
+         background: linear-gradient(135deg, 
+  rgb(18, 78, 102), 
+  rgb(60, 145, 117), 
+  rgb(23, 148, 201), 
+  rgb(18, 80, 105)
+); 
         -webkit-border-radius: 4px 4px 0px 0px;
         -moz-border-radius: 4px 4px 0px 0px;
         border-radius: 4px 4px 0px 0px;
@@ -76,15 +81,29 @@
         font-weight: 700;
     }
     .pricing-plan .pricing-header.secondary {
-        background-color: #16728D;
+       background: linear-gradient(135deg, 
+  rgb(18, 78, 102), 
+  rgb(60, 145, 117), 
+  rgb(23, 148, 201), 
+  rgb(18, 80, 105)
+); 
     }
     .pricing-plan .pricing-header.red {
-      background-color: #50806A;
+      background: linear-gradient(135deg, 
+  rgb(18, 78, 102), 
+  rgb(60, 145, 117), 
+  rgb(23, 148, 201), 
+  rgb(18, 80, 105)
+); 
     }
-    .pricing-plan .pricing-features {
+    .text-mad{
         padding: 0;
-        margin: 20px 0;
-        text-align: left;
+         font-weight:600;
+         
+        font-size: 22px;
+        text-align: justify;
+        color: black;
+        
     }
     .pricing-plan .pricing-features li {
         padding: 15px 15px 15px 40px;
@@ -113,7 +132,34 @@
             margin-bottom: 1.5rem;
         }
     }
-    
+
+    ul li::before {
+    color: transparent;
+    font-size: 0.5px;
+    content: " ";
+    margin-left: -1.3em;
+    margin-right: 15px;
+    padding: 10px;
+    background-color: rgb(0, 0, 0);
+    -webkit-mask-image: url("/img/right-arrow.png");
+    -webkit-mask-size: cover;
+}
+
+.custom-heading{
+  font-size: 45px;
+}
+@media (max-width: 767px) {
+            .custom-heading {
+                font-size: calc(3.2rem + 1vw);
+            }
+            .custom-list {
+                font-size: 0.9rem;
+            }
+        }
+        .section-divider {
+            border-top: 5px solid #000000;
+            margin: 2rem 0;
+        }
         </style>
     
     <link rel="stylesheet" href="styles.css">
@@ -137,23 +183,23 @@
           </a>
     
           <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav mr-auto">
+            <ol class="navbar-nav mr-auto">
               <li class="nav-item" data-aos="fade-down" data-aos-duration="1000">
                 <a class="nav-link" href="# " style="font-family: cinzel; color: #212A31; font-size: 20px; font-weight: 600;">Why We Do This ?</a>
               </li>
               
-            </ul>
+            </ol>
     
             <a class="navbar-brand d-none d-lg-block" href="#">
               <img src="/img/dd.png" alt="Logo" class="pl-5 ml-3" height="60">
               <h3>Dollarsdash</h3>
             </a>
            
-            <ul class="navbar-nav ml-auto">
+            <ol class="navbar-nav ml-auto">
               <li class="nav-item" data-aos="fade-down" data-aos-duration="1400">
                 <a class="nav-link" href="# " style="font-family: cinzel; color: #212A31; font-size: 20px; font-weight: 600;">Portfolio's</a>
               </li>
-            </ul>
+            </ol>
           </div>
         </div>
       </nav>
@@ -180,65 +226,75 @@
     </section>
   </div>
 
-<div class="container-fluid">
-    <section id="about " class="p-5" data-aos="fade-left">
-        <!----about our service --->
-        <div class="container">
-            <div class="row gutters">
-            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
-            <div class="pricing-plan">
-            <div class="pricing-header">
-            <div class="pricing-cost">Why we do this</div>
-            </div>
-            <ul class="pricing-features">
-            <li>Mutual growth</li>
-            <li>Increase Sales</li>
-            <li>Act link Linktree</li>
-            <li>To build trust for our work</li>
-            <li>To build Distribution for our work</li>
-            <br>
-            <br>
-            <br>
-            </ul>
-            </div>
-            </div>
-            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
-            <div class="pricing-plan">
-            <div class="pricing-header red">
-            <div class="pricing-cost">What we offer for free</div>
-            </div>
-            <ul class="pricing-features">
-            <li>Custom design (under limitation)</li>
-            <li>high conversation rate via fixed object 
-                <br>based user experience</li>
-            <li>User friendly Interface</li>
-            <li>Responsive design</li>
-            <li>Free-hosting (under policy)</li>
-            </ul>
-            </div>
-            </div>
-            <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12">
-            <div class="pricing-plan">
-            <div class="pricing-header secondary">
-            <div class="pricing-cost">How it works?</div>
-            <div class="pricing-save">Eligibility</div>
-            </div>
-            <ul class="pricing-features">
-            <li>You should be solopreneur</li>
-            <li>Instapreneur</li>
-            <li>Service based business</li>
-            <li>Choose the given by use</li>
-            <li>Customized the colour theme<br>
-                (Logo,images,links and more)</li>
-            <li>The domain should be maintained and <br>
-                registered by you</li>
-            </ul>
-            </div>
-            </div>
-            </div>
-            </div>
-    </section>
+    
+    <div class="container mt-4">
+      <!-- Section 1 -->
+      <div class="row mb-4">
+          <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
+              <h2 class="custom-heading">Why we do this <img src="/img/how.gif" height="100px" ></h2>
+             
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12">
+            <ul class=" text-mad">
+              <li>Mutual growth</li>
+              <li>Increase Sales</li>
+              <li>Act link Linktree</li>
+              <li>To build trust for our work</li>
+              <li>To build Distribution for our work</li>
+              
+              </ul>
+  
+          </div>
+      </div>
+
+      <div class="section-divider"></div>
+
+      <!-- Section 2 -->
+      <div class="row mb-4">
+          <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
+              <h2 class="custom-heading">What we offer for free <img src="/img/web.gif" height="100px"></h2>
+              <p>Here's the text for our second section. It shows how the layout repeats while maintaining responsiveness.</p>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12">
+            <ul class="text-mad">
+              <li>Custom design (under limitation)</li>
+              <li>High conversion rate with a consistent user experience.</li>
+              <li>User friendly Interface</li>
+              <li>Responsive design</li>
+              <li>Free-hosting (under policy)</li>
+              </ul>
+  
+          </div>
+      </div>
+
+      <div class="section-divider"></div>
+
+      <!-- Section 3 -->
+      <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
+              <h2 class="custom-heading">How it Work's <img src="/img/how1.gif" height="120px"></h2>
+              <p>This is the third and final section of our repeated content. It completes our example of a responsive layout.</p>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12">
+            <ul class="text-mad">
+              <li>You should be solopreneur</li>
+    
+              <li>Instapreneur</li>
+              <li>Service based business</li>
+              <li>Choose the given by use</li>
+              <li>Customized the colour theme<br>
+                  (Logo,images,links and more)</li>
+              <li>The domain should be maintained and <br>
+                  registered by you</li>
+              </ul>
+          </div>
+         
+          </div>
+      </div>
   </div>
+  <br>
+  <br>
+
   <div class="container-fluid">
     <div class="container portfolio-section">
       <div class="portfolio-title h2 d-flex justify-content-center" style="font-family: cinzel;">Portfolios of Student Developers</div>
