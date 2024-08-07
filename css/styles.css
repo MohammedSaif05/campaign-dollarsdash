@@ -2,10 +2,9 @@
    
     overflow-x: hidden;
 }
-
-
-
-
+.navbar {
+  width: 100vw;
+}
 
 body {
     font-family: "Comic Neue", cursive;
@@ -14,10 +13,8 @@ body {
     overflow-y: scroll; 
     overflow-x: hidden;
     scrollbar-width: none;
-    position: relative
-}
-@media screen {
-    
+    position: relative;
+    overflow-x: hidden;
 }
 header {
     margin-bottom: 20px;
@@ -39,6 +36,8 @@ header {
   font-optical-sizing: auto;
   font-weight: weigh;
   font-style: normal;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
 }
 section {
     padding: 60px 0;
