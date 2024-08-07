@@ -101,22 +101,18 @@ background-repeat: no-repeat; /* Prevents the image from repeating */
   background: transparent;
   outline: none;
   padding: 0;
+  display: block !important;
+  position: relative !important;
+  right: 0 !important;
+}
+.navbar-toggler.collapsed {
+  display: block;
+}
+.navbar-toggler:not(.collapsed) {
+  display: none;
 }
 /* Hide the default toggle icon */
-.navbar-toggler-icon {
-  display: block;
-  width: 30px; /* Adjust size as needed */
-  height: 30px; /* Adjust size as needed */
-  background-image: url('/img/cross.svg'); /* Path to your hamburger icon */
-  background-size: cover;
-  transition: background-image 0.3s ease;
-}
-
 /* Toggle to cross icon */
-.navbar-toggler.toggled .navbar-toggler-icon {
-  background-image: url('/img/close.png'); /* Path to your cross icon */
-}
-
 /* Smooth toggle animation */
 .navbar-collapse {
   transition: max-height 0.35s ease;
@@ -288,3 +284,5 @@ color: #007bff; /* Change color on hover */
 .cta-button {
 margin-top: 20px;
 }
+
+/*navbar toggle button */
