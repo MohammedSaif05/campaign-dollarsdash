@@ -265,7 +265,10 @@ width: 100%;
 height: auto;
 }
 .portfolio-content {
-padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .social-icons {
 margin: 50px 0;
@@ -278,11 +281,39 @@ margin: 0 10px;
 transition: color 0.3s ease;
 padding: 5px;
 }
-.social-icons i:hover {
-color: #007bff; /* Change color on hover */
-}
-.cta-button {
-margin-top: 20px;
+
+/* social icons of portfolio*/
+.social-icons {
+  text-align: center;
+  font-size: 30px;
 }
 
-/*navbar toggle button */
+.social-icons > a {
+  display: inline-block;
+  margin: 0 10px;
+  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.social-icons > a:hover {
+  transform: translateY(-5px);
+}
+
+.social-icons > a:hover .fab, .social-icons > a:hover .fas {
+  color: #333;
+}
+
+.social-icons > a:hover .fab.fa-github {
+  color: #333;
+}
+
+.social-icons > a:hover .fab.fa-linkedin-in {
+  color: #0072b1;
+}
+
+.social-icons > a:hover .fab.fa-instagram {
+  color: #e1306c;
+}
+
+.social-icons > a:hover .fas.fa-times {
+  color: #333;
+}
