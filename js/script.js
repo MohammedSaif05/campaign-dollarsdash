@@ -1,5 +1,5 @@
 
-  $('.owl-carousel').owlCarousel({
+$('.owl-carousel').owlCarousel({
     items:1,
     merge:true,
     loop:true,
