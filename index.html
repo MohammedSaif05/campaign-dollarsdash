@@ -36,67 +36,7 @@
        font-family: cinzel;
         overflow-x: hidden;
     }
-    .pricing-plan {
-        margin: 0 0 1rem 0;
-        width: 100%;
-        position: relative;
-
-        -webkit-border-radius: 4px;
-        -moz-border-radius: 4px;
-        border-radius: 4px;
-    }
-    .pricing-plan .pricing-header {
-        padding: 0;
-        margin-bottom: 1rem;
-        text-align: center;
-         background: linear-gradient(135deg, 
-  rgb(18, 78, 102), 
-  rgb(60, 145, 117), 
-  rgb(23, 148, 201), 
-  rgb(18, 80, 105)
-); 
-        -webkit-border-radius: 4px 4px 0px 0px;
-        -moz-border-radius: 4px 4px 0px 0px;
-        border-radius: 4px 4px 0px 0px;
-    }
-    .pricing-plan .pricing-header .pricing-title {
-        font-size: 1.2rem;
-        color: #ffffff;
-        padding: 1rem 0;
-        text-transform: uppercase;
-        font-weight: 600;
-        margin: 0;
-        text-shadow: 0 30px 10px rgba(0, 0, 0, 0.15);
-    }
-    .pricing-plan .pricing-header .pricing-cost {
-        color: #ffffff;
-        padding: 1rem 0;
-        font-size: 2.5rem;
-        font-weight: 700;
-        text-shadow: 0 30px 10px rgba(0, 0, 0, 0.15);
-    }
-    .pricing-plan .pricing-header .pricing-save {
-        color: #ffffff;
-        padding: 0.8rem 0;
-        font-size: 1rem;
-        font-weight: 700;
-    }
-    .pricing-plan .pricing-header.secondary {
-       background: linear-gradient(135deg, 
-  rgb(18, 78, 102), 
-  rgb(60, 145, 117), 
-  rgb(23, 148, 201), 
-  rgb(18, 80, 105)
-); 
-    }
-    .pricing-plan .pricing-header.red {
-      background: linear-gradient(135deg, 
-  rgb(18, 78, 102), 
-  rgb(60, 145, 117), 
-  rgb(23, 148, 201), 
-  rgb(18, 80, 105)
-); 
-    }
+ 
     .text-mad{
         padding: 0;
          font-weight:600;
@@ -106,34 +46,7 @@
         color: black;
         
     }
-    .pricing-plan .pricing-features li {
-        padding: 15px 15px 15px 40px;
-        overflow: hidden;
-        white-space: nowrap;
-        text-overflow: ellipsis;
-        position: relative;
-        line-height: 100%;
-    }
-    
-    .pricing-plan .pricing-footer {
-        -webkit-border-radius: 0 0 3px 3px;
-        -moz-border-radius: 0 0 3px 3px;
-        border-radius: 0 0 3px 3px;
-        text-align: center;
-        padding: 1rem 0 2rem 0;
-    }
-    
-    @media (max-width: 767px) {
-        .pricing-plan .pricing-header {
-            text-align: center;
-        }
-        .pricing-plan .pricing-header i {
-            display: block;
-            float: none;
-            margin-bottom: 1.5rem;
-        }
-    }
-
+   
     ul li::before {
     color: transparent;
     font-size: 0.5px;
@@ -161,6 +74,80 @@
             border-top: 5px solid #000000;
             margin: 2rem 0;
         }
+
+        .container {
+            margin-top: 40px;
+        }
+        .form-container {
+            background: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            animation: fadeIn 1s ease-out;
+        }
+        .form-container h2 {
+            margin-bottom: 20px;
+            font-size: 28px;
+            color: #333;
+            text-align: center;
+            font-weight: 600;
+        }
+        .form-group label {
+            font-weight: 600;
+            color: #555;
+            margin-bottom: 10px;
+            display: block;
+        }
+        .form-control {
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 12px;
+            font-size: 16px;
+            transition: border-color 0.3s, box-shadow 0.3s;
+        }
+        .form-control:focus {
+            border-color: #007bff;
+            box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+            outline: none;
+        }
+        .form-control::placeholder {
+            color: #999;
+        }
+        .btn {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            padding: 12px 24px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        .btn:hover {
+            background-color: #0056b3;
+            transform: scale(1.05);
+        }
+        .btn-success {
+            background-color: #28a745;
+        }
+        .btn-success:hover {
+            background-color: #218838;
+            transform: scale(1.05);
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .img-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .img-container img {
+            max-width: 100%;
+            height: auto;
+        }
         </style>
     
     <link rel="stylesheet" href="styles.css">
@@ -172,7 +159,7 @@
 
 
     <!---navbar bar content here-->
-  <nav class="navbar navbar-expand-lg w-100 navbar-light " style="background-color: #ffffff; !important">
+  <nav class="navbar navbar-expand-lg w-100 navbar-light " style="background-color: #ffff; !important">
       <div class="container">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -211,7 +198,8 @@
         <h1>Your Instagram Fame Deserves a Website </h1>
         <h2>— And It’s Free for 25 Creators! </h2>
         <br>
-        <br>
+       
+     <br>
         <h3>Instapreneur & Service Business Deserves This.</h3>
         <br>
         <div class="">
@@ -231,11 +219,11 @@
     <div class="container mt-4">
       <!-- Section 1 -->
       <div class="row mb-4">
-          <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
+          <div class="col-lg-6 col-md-6 col-sm-12 mb-3" data-aos="fade-right" data-aos-duration="1000">
               <h2 class="custom-heading">Why we do this <img src="/img/how.gif" height="100px" ></h2>
              
           </div>
-          <div class="col-lg-6 col-md-6 col-sm-12">
+          <div class="col-lg-6 col-md-6 col-sm-12" data-aos="fade-left" data-aos-duration="1000">
             <ul class=" text-mad">
               <li>Mutual growth</li>
               <li>Increase Sales</li>
@@ -252,14 +240,14 @@
 
       <!-- Section 2 -->
       <div class="row mb-4">
-          <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
+          <div class="col-lg-6 col-md-6 col-sm-12 mb-3 " data-aos="fade-up" data-aos-duration="1000">
               <h2 class="custom-heading">What we offer for free <img src="/img/web.gif" height="100px"></h2>
               <p>Here's the text for our second section. It shows how the layout repeats while maintaining responsiveness.</p>
           </div>
-          <div class="col-lg-6 col-md-6 col-sm-12">
+          <div class="col-lg-6 col-md-6 col-sm-12" data-aos="fade-down" data-aos-duration="1000">
             <ul class="text-mad">
-              <li>Custom design (under limitation)</li>
-              <li>High conversion rate with a consistent user experience.</li>
+              <li>Custom design(under limitation)</li>
+              <li>High conversion with consistent UX.</li>
               <li>User friendly Interface</li>
               <li>Responsive design</li>
               <li>Free-hosting (under policy)</li>
@@ -272,11 +260,11 @@
 
       <!-- Section 3 -->
       <div class="row">
-          <div class="col-lg-6 col-md-6 col-sm-12 mb-3">
+          <div class="col-lg-6 col-md-6 col-sm-12 mb-3" data-aos="fade-down" data-aos-duration="1000">
               <h2 class="custom-heading">How it Work's <img src="/img/how1.gif" height="120px"></h2>
               <p>This is the third and final section of our repeated content. It completes our example of a responsive layout.</p>
           </div>
-          <div class="col-lg-6 col-md-6 col-sm-12">
+          <div class="col-lg-6 col-md-6 col-sm-12" data-aos="fade-left" data-aos-duration="1000">
             <ul class="text-mad">
               <li>You should be solopreneur</li>
     
@@ -318,7 +306,7 @@
               <a href="https://instagram.com" target="_blank" class="text-dark p-2"><i class="fa-brands fa-instagram fa-bounce" style="color: #CD2E94;"></i></i></a>
               <a href="https://example.com" target="_blank" class="text-dark p-2"><i class="fa-brands fa-x-twitter fa-bounce" style="color: black;"></i></i></a>
             </div>
-            <a href="#" class="btn btn-primary cta-button">Visit portfolio</a>
+            <a href="#" class="btn btn-primary cta-button d-flex justify-content-center">Visit portfolio</a>
           
           </div>
         </div>
@@ -335,7 +323,7 @@
                 <a href="https://instagram.com" target="_blank" class="text-dark p-2"><i class="fa-brands fa-instagram fa-bounce" style="color: #CD2E94;"></i></a>
                 <a href="https://example.com" target="_blank" class="text-dark p-2"><i class="fa-brands fa-x-twitter fa-bounce" style="color:black;"></i></a>
               </div>
-              <a href="#" class="btn btn-primary cta-button">Visit Portfolio</a>
+              <a href="#" class="btn btn-primary cta-button d-flex justify-content-center">Visit Portfolio</a>
             </div>
             </div>
           </div>
@@ -343,28 +331,64 @@
       </div>
     </div>
   </div>
-  <div class="container-fluid">
-    <section id="contact" class="p-5" data-aos="fade-up">
-        <div class="container">
-            <h2>Contact Us</h2>
-            <form action="submit_form.php" method="post">
-                <div class="form-group">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" class="form-control" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" class="form-control" required>
-                </div>
-                <div class="form-group">
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" class="form-control" required></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">Send</button>
-            </form>
+  <br>
+  <br>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 d-none d-md-block img-container" data-aos="fade-left">
+        <img src="/img/dd.png" alt="Image Description" class="img-fluid">
+    </div>
+        <div class="col-md-6" data-aos="fade-right">
+            <div class="form-container">
+                <h2> Application Form</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="fullName">Full Name:</label>
+                        <input type="text" class="form-control" id="fullName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="instagramID">Instagram ID:</label>
+                        <input type="text" class="form-control" id="instagramID" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="businessType">Type of Business:</label>
+                        <select class="form-control" id="businessType">
+                            <option>Individual</option>
+                            <option>Business</option>
+                            <option>Enterprise</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="contactNumber">Contact Number:</label>
+                        <input type="text" class="form-control" id="contactNumber" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="websiteType">Website Type Preference:</label>
+                        <select class="form-control" id="websiteType">
+                            <option>Replicate of LinkTree</option>
+                            <option>Full Conversion Derived Design</option>
+                            <option>Custom Design (Describe in Details)</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="followers">Number of Followers on Instagram:</label>
+                        <input type="number" class="form-control" id="followers" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="additionalInfo">Additional Information or Special Requests:</label>
+                        <textarea class="form-control" id="additionalInfo" rows="3"></textarea>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                      <button type="submit" class="btn btn-success btn-block d-flex justify-content-center" id="sendMessage">Submit</button>
+                    </div>
+                   
+                </form>
+            </div>
         </div>
-    </section>
-  </div>
+       
+    </div>
+</div>
+
 <div class="container-fluid">
     <footer class="bg-dark text-white text-center p-3">
         <p>&copy; 2024 Your Company. All rights reserved.</p>
@@ -375,7 +399,39 @@
     
     <!-- AOS JS CDN -->
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-    
+    <script>
+      document.getElementById('sendMessage').addEventListener('click', function() {
+          // Collect form data
+          var fullName = document.getElementById('fullName').value;
+          var instagramID = document.getElementById('instagramID').value;
+          var businessType = document.getElementById('businessType').value;
+          var contactNumber = document.getElementById('contactNumber').value;
+          var websiteType = document.getElementById('websiteType').value;
+          var followers = document.getElementById('followers').value;
+          var additionalInfo = document.getElementById('additionalInfo').value;
+      
+          // Construct the message
+          var message = `*Application Form*\n\n` +
+                        `Full Name: ${fullName}\n` +
+                        `Instagram ID: ${instagramID}\n` +
+                        `Type of Business: ${businessType}\n` +
+                        `Contact Number: ${contactNumber}\n` +
+                        `Website Type Preference: ${websiteType}\n` +
+                        `Number of Followers: ${followers}\n` +
+                        `Additional Information: ${additionalInfo}`;
+      
+          // URL encode the message
+          var encodedMessage = encodeURIComponent(message);
+      
+          // WhatsApp API link (replace with your WhatsApp number)
+          var whatsappNumber = '6382043432'; // Replace with your WhatsApp number
+          var whatsappURL = `https://api.whatsapp.com/send?phone=${whatsappNumber}&text=${encodedMessage}`;
+      
+          // Open WhatsApp
+          window.open(whatsappURL, '_blank');
+      });
+      </script>
+      
     <script>
         AOS.init();
     </script>
