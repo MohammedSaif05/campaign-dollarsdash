@@ -16,3 +16,11 @@ $('.owl-carousel').owlCarousel({
         }
     }
 })
+
+function btnAlert(){
+Swal.fire({
+  title: "Message Sent!",
+  text: "click ok continue",
+  icon: "success"
+});
+}
