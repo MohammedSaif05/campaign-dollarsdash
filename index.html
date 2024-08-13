@@ -212,77 +212,57 @@ padding-bottom: 0;
 ul{
   list-style: none;
 }
-.footer{
-  background-color: #24262b;
-    padding: 70px 0;
-}
-.footer-col{
-   width: 25%;
-   padding: 0 15px;
-}
-.footer-col h4{
-  font-size: 18px;
-  color: #ffffff;
-  text-transform: capitalize;
-  margin-bottom: 35px;
-  font-weight: 500;
-  position: relative;
-}
-.footer-col h4::before{
-  content: '';
-  position: absolute;
-  left:0;
-  bottom: -10px;
-  background-color: #e91e63;
-  height: 2px;
-  box-sizing: border-box;
-  width: 50px;
-}
-.footer-col ul li:not(:last-child){
-  margin-bottom: 10px;
-}
-.footer-col ul li a{
-  font-size: 16px;
-  text-transform: capitalize;
-  color: #ffffff;
-  text-decoration: none;
-  font-weight: 300;
-  color: #bbbbbb;
-  display: block;
-  transition: all 0.3s ease;
-}
-.footer-col ul li a:hover{
-  color: #ffffff;
-  padding-left: 8px;
-}
-.footer-col .social-links a{
-  display: inline-block;
-  height: 40px;
-  width: 40px;
-  background-color: rgba(255,255,255,0.2);
-  margin:0 10px 10px 0;
-  text-align: center;
-  line-height: 40px;
-  border-radius: 50%;
-  color: #ffffff;
-  transition: all 0.5s ease;
-}
-.footer-col .social-links a:hover{
-  color: #24262b;
-  background-color: #ffffff;
+footer {
+    background-color: #000000;
 }
 
-/*responsive*/
-@media(max-width: 767px){
-  .footer-col{
-    width: 50%;
-    margin-bottom: 30px;
+footer a {
+    color: #ffffff;
 }
+
+footer a:hover {
+    color: #adb5bd;
 }
-@media(max-width: 574px){
-  .footer-col{
-    width: 100%;
+
+footer .btn-outline-light {
+    border-color: #ffffff;
+    color: #ffffff;
 }
+
+footer .btn-outline-light:hover {
+    background-color: #ffffff;
+    color: #343a40;
+}
+
+@media (max-width: 576px) {
+    footer .btn-outline-light {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+
+
+.accordion-button:not(.collapsed) {
+    color: #ffffff;
+    background-color: #000000;
+    border-color: #ffffff;
+}
+
+.accordion-body {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.accordion-button:not(.collapsed) {
+    color: #ffffff;
+    background-color: #000000;
+    border-color: #000000;
+}
+
+.accordion-body {
+    font-size: 1rem;
+    line-height: 1.5;
 }
 
         </style>
@@ -533,103 +513,89 @@ ul{
        
     </div>
 </div>
-<div class=
-"container rounded h-75 w-50 m-5 p-5 text-light bg-success">
-        <h1>FAQ</h1>
-        <div class="accordion" id="accordionExample">
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                    <button class="accordion-button"
-                        type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapseOne" aria-expanded="true"
-                        aria-controls="collapseOne">
-                        What is GeeksforGeeks used for?
-                    </button>
-                </h2>
-                <div id="collapseOne" class="accordion-collapse collapse show"
-                    data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                        <strong>GeeksforGeeks</strong> 
-                        is a leading platform that provides computer science resources
-                        and coding challenges for programmers and technology enthusiasts, 
-                        along with interview and exam preparations for upcoming aspirants.
-                    </div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button"
-                        data-bs-toggle="collapse" data-bs-target="#collapseTwo"
-                        aria-expanded="false" aria-controls="collapseTwo">
-                        Who is the founder of GeeksforGeeks?
-                    </button>
-                </h2>
-                <div id="collapseTwo" class="accordion-collapse collapse"
-                    data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                        <strong>
-                            Sandeep Jain is the founder at GeeksforGeeks.
-                        </strong> 
-                        He is an alumini of Indian Institute of Technology Roorkee. 
-                        His platform GeeksforGeeks is well recognized among all the
-                        engineering students throughout all colleges in India.
-                    </div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                    <button class="accordion-button collapsed"
-                        type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapseThree" aria-expanded="false"
-                        aria-controls="collapseThree">
-                        When was GeeksforGeeks created?
-                    </button>
-                </h2>
-                <div id="collapseThree" class="accordion-collapse collapse"
-                    data-bs-parent="#accordionExample">
-                    <div class="accordion-body">
-                        <strong>
-                            GeeksForGeeks was founded in 2009.
-                        </strong> 
-                        Where is the global headquarters of GeeksForGeeks? 
-                        Global headquarters for GeeksForGeeks is located in Noida, 
-                        Uttar Pradesh,India.
-                    </div>
-                </div>
+<div class="container my-5">
+  <h2 class="text-center mb-4">Frequently Asked Questions</h2>
+  <div class="accordion" id="faqAccordion">
+      <!-- FAQ Item 1 -->
+      <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                <h3 style="font-family:'Times New Roman', Times, serif;">The Eligibility requirements for the Free Website?</h3>
+              </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                  <h4 style="font-family:'Times New Roman', Times, serif;">You must be a solopreneur or instapreneur with a minimum of 5,000 Instagram followers and operate a service-based business.</h5>
+              </div>
+          </div>
+      </div>
+      <!-- FAQ Item 2 -->
+      <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                <h3 style="font-family:'Times New Roman', Times, serif;">Do I Need to Handle Domain Registration?</h3>
+              </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                 <h4 style="font-family:'Times New Roman', Times, serif;">Yes, you are responsible for registering and maintaining your own domain.</h5>
+              </div>
+          </div>
+      </div>
+      <!-- FAQ Item 3 -->
+      <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  <h3 style="font-family:'Times New Roman', Times, serif;">What Will the Free Website Include?</h3>
+              </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                  <h4 style="font-family:'Times New Roman', Times, serif;">The website will be customized with your preferred color theme, logo, images, and links.</h4>
+              </div>
+          </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingFour">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseTwo">
+              <h3 style="font-family:'Times New Roman', Times, serif;">What Do You Expect in Exchange for the Free Website?</h3>
+            </button>
+        </h2>
+        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+               <h4 style="font-family:'Times New Roman', Times, serif;">In exchange, we ask you to create a scripted video for Instagram about our collaboration and provide video feedback and a Google review.</h5>
             </div>
         </div>
     </div>
+  </div>
+</div>
 
   <!---footer-->
 
-  <footer class="footer">
+  <!-- Footer -->
+  <footer class="bg-dark text-white py-3">
     <div class="container">
-     <div class="row">
-       <div class="footer-col">
-         <h4>Dollarsdash</h4>
-         <ul>
-           <li><a href="#whywedo">about us</a></li>
-           <li><a href="#whatweoffer">our services</a></li>
-           <li><a href="#">privacy policy</a></li>
-         </ul>
-       </div>
-       <div class="footer-col">
-         <h4>get help</h4>
-         <ul>
-           <li><a href="#portfolio">contact</a></li>
-           <li><a href="#redirect">application form</a></li>
-         </ul>
-       </div>
-       <div class="footer-col">
-         <h4>follow us</h4>
-         <div class="social-links">
-           <a target="_blank" href="https://api.whatsapp.com/send?phone=9361843267"><i class="fab fa-whatsapp"></i></a>
-           <a target="_blank" href="https://www.instagram.com/immaheshwaran?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="fab fa-instagram"></i></a>
-         </div>
-       </div>
-     </div>
+        <div class="row align-items-center">
+            <!-- Privacy Policy Link (visible on all devices) -->
+            <div class="col-md-4 text-md-start text-center mb-2 mb-md-0" >
+                <a href="#" class="text-white text-decoration-none">Privacy Policy</a>
+            </div>
+            <!-- Copyright Notice (visible on all devices) -->
+            <div class="col-md-4 text-center">
+                <p class="mb-0">&copy; 2024 Dollars Dash. All rights reserved.</p>
+            </div>
+            <!-- Instagram Button (visible on all devices) -->
+            <div class="col-md-4 text-md-end text-center mb-2 mb-md-0" >
+                <a href="https://www.instagram.com" class="btn btn-outline-light  align-items-center" target="_blank">
+                    <i class="bi bi-instagram me-2"></i> Instagram
+                </a>
+            </div>
+        </div>
+        <!-- On smaller screens, display Privacy Policy and Instagram button as full-width -->
+       
     </div>
- </footer>
+</footer>
+
 
 
     <!-- Bootstrap JS and Popper.js CDN -->
